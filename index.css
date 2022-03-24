@@ -1,0 +1,133 @@
+*,::before,::after {
+
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* Colors */
+    --first-color: #1A73E8;
+    --input-color: #80868B;
+    --border-color:#DADCE0;
+
+    /* Font */
+    --body-font: 'Roboto', sans-serif;
+    --normal-font-size: 1rem;
+    --small-font-sieze: 0.75rem;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    /* background-image: linear-gradient(to left top, rgb(255, 136, 0), rgba(255, 196, 0, 0.5) 50%, #FFF); */
+    background-image: linear-gradient(rgb(255, 136, 0), rgba(255, 196, 0, 0.5));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-image: linear-gradient(to right, #FFF , rgb(141, 238, 255)); */
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__right__block li {
+    margin: 2rem;
+
+}
+.header__right__block {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    list-style: none;
+    font-family: var(--body-font);
+}
+
+li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--body-font);
+    color: black;
+    margin: 2rem;
+    text-decoration: none;
+}
+
+a:hover {
+    box-shadow: 0 10px 36px rgba(163, 163, 163, 0.082);
+}
+
+li:hover {
+    /* box-shadow: 0 10px 36px rgba(163, 163, 163, 0.219); */
+    border-radius: 1rem;
+}
+
+.button:hover {
+    background-color: rgba(255, 196, 0, 0.308);
+}
+.form {
+    margin: auto;
+    position: relative;
+    margin-top: 2rem;
+    width: 50rem;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(99, 99, 105, 0.2);
+    cursor: pointer;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.form__div{
+    position: relative;
+    height: 48px;
+    margin-bottom: 1.5rem;
+}
+
+
+.form__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+    border-radius: .5rem;
+
+}
+.form__input:hover{
+    box-shadow: 0 10px 36px rgba(163, 163, 163, 0.219);
+    background-color: rgba(255, 196, 0, 0.308);
+}
+
+.form__label{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 .25rem;
+    color:  rgb(54, 54, 54);
+    font-size: var(--normal-font-size);
+    transition: .3s;
+}
+
+.form__input:focus + .form__label{
+    top:-.5rem;
+    left: .8rem;
+    color:  rgb(54, 54, 54);
+    font-size: var(--small-font-sieze);
+    font-weight: 500;
+    z-index: 10;
+}
