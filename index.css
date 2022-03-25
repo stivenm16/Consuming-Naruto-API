@@ -94,7 +94,7 @@ li:hover {
     margin: auto;
     position: relative;
     margin-top: 2rem;
-    width: 50rem;
+    width: 40rem;
     padding: 2rem 2rem;
     border-radius: 1rem;
     box-shadow: 0 10px 25px rgba(99, 99, 105, 0.2);
@@ -107,6 +107,7 @@ li:hover {
     position: relative;
     height: 48px;
     margin-bottom: 1.5rem;
+    width: auto;
 }
 
 
@@ -146,4 +147,77 @@ li:hover {
     font-size: var(--small-font-sieze);
     font-weight: 500;
     z-index: 10;
+}
+
+@media (max-width: 786px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    ul {
+      margin-top: 20px;
+    }
+
+    .form {
+        width: 25rem;
+    }
+
+    li a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+    }
+    .logos {
+        display: flex;
+        align-items: flex-start;
+    }
+    li .button {
+        margin: 0;
+        padding: 0;
+    }
+    .header__right__block {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 428px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    ul {
+      margin-top: 20px;
+    }
+
+    .form {
+        width: 25rem;
+    }
+    .button p {
+        align-self: center;
+    }
+    li a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+    }
+    li .button {
+        margin: 0;
+        padding: 0;
+    }
+    .header__right__block {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
 }
