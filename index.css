@@ -22,11 +22,9 @@ body{
     padding: 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    /* background-image: linear-gradient(to left top, rgb(255, 136, 0), rgba(255, 196, 0, 0.5) 50%, #FFF); */
-    background-image: linear-gradient(rgb(255, 136, 0), rgba(255, 196, 0, 0.5));
+    /* background-image: linear-gradient(rgb(255, 136, 0), rgba(255, 196, 0, 0.5));
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* background-image: linear-gradient(to right, #FFF , rgb(141, 238, 255)); */
+    background-attachment: fixed; */
 }
 
 html {
@@ -38,18 +36,30 @@ header {
     justify-content: space-between;
 }
 
+.logo {
+    height: auto;
+    width: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header__right__block li {
     margin: 2rem;
 
 }
 .header__right__block {
     display: flex;
-    align-items:center;
+    align-items:flex-start;
     justify-content: space-between;
     list-style: none;
     font-family: var(--body-font);
 }
 
+.logos {
+    height: auto;
+    width: 5rem;
+}
 li a {
     display: flex;
     flex-direction: column;
@@ -59,6 +69,13 @@ li a {
     color: black;
     margin: 2rem;
     text-decoration: none;
+}
+
+a {
+    font-family: var(--body-font);
+}
+.github{
+    margin-top: 1.7rem;
 }
 
 a:hover {
@@ -100,7 +117,7 @@ li:hover {
     width: 100%;
     height: 100%;
     font-size: var(--normal-font-size);
-    border: none;
+    border:none;
     outline: none;
     padding: 1rem;
     background: none;
@@ -110,7 +127,6 @@ li:hover {
 }
 .form__input:hover{
     box-shadow: 0 10px 36px rgba(163, 163, 163, 0.219);
-    background-color: rgba(255, 196, 0, 0.308);
 }
 
 .form__label{
